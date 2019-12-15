@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Webpage</title>
+
+	<link rel="shortcut icon"  href="imgs/logo_FSk_icon.ico">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<body>
+
+	<div id="LogoDiv">
+		<img id="Logo" src="imgs/Logo3.png">
+	</div>
+
+	<div id="Navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Projects.html">Projects</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="MainDiv">
+
+		<div class="Columns">
+			<div class="imgDiv">
+				<img id="gif" src="imgs/MMP 100 project animation gif.gif">
+
+			<video id="video" controls="" style="display:none; width: 100%;">
+				<source src="imgs/MMP 100 project animation.mp4" type="video/mp4">
+			</video>
+			</div>
+
+			<button onclick="changeCode()">w/SFX</button>
+
+			<script type="text/javascript">
+				var isGif = true;
+
+				function changeCode(){
+					if(isGif == true){
+						document.getElementById('gif').style.display = "none";
+						document.getElementById('video').style.display = "block";
+						isGif = false;
+					}
+					else{
+						document.getElementById('gif').style.display = "block";
+						document.getElementById('video').style.display = "none";
+						isGif = true;
+					}
+				}
+			</script>
+
+		</div>
+
+		<div class="Columns">
+			<div class="textDiv">
+				<h1>Project 5</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>.
+			</p>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
